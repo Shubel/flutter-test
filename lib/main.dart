@@ -34,9 +34,9 @@ class Home extends StatelessWidget {
         //   size: 50,
         //   color: Colors.white,
         // ),
-        child: Image.network(
-            'https://img.freepik.com/free-photo/professional-soccer-player-cartoon_23-2151502421.jpg?ga=GA1.1.810212258.1715444724&semt=sph'),
-        // child: Image.asset('assets/images/Football.webp'),
+        // child: Image.network(
+        //     'https://img.freepik.com/free-photo/professional-soccer-player-cartoon_23-2151502421.jpg?ga=GA1.1.810212258.1715444724&semt=sph'),
+        child: Image.asset('assets/images/Football.webp'),
       ),
     );
   }
