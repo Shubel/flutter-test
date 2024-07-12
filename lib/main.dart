@@ -1,35 +1,42 @@
 import 'package:flutter/material.dart';
 
+// Topic: image, materialApp, scaffold, Icons, buttons(ElevatedButton, IconButton)
+
 void main() {
   runApp(IntroApp());
 }
 
 class IntroApp extends StatelessWidget {
+  const IntroApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.pink,
-          title: Text("Home"),
-        ),
-        body: Center(
-          // child: Image.network("https://img.freepik.com/free-photo/white-flower-petals-with-water-drops-pollen_181624-27665.jpg?t=st=1720113265~exp=1720116865~hmac=aaecbf5553ee40bb01a3677ed75821b5d474588b291a44bf99388b687dc0950b&w=740"),
-          child: Text(
-             " Hello World! from Sunny.",
-            textAlign: TextAlign.center,
-            maxLines: 5,
+      home: Home(),
+    );
+  }
+}
 
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.w700,
-              // decoration: TextDecoration.underline,
-              letterSpacing: 1,
-              wordSpacing: 5,
-              // overflow: TextOverflow.ellipsis,
-            ),
-          ),
-        ),
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.pink,
+      appBar: AppBar(
+        title: Text("Home"),
+        backgroundColor: Colors.blueAccent,
+      ),
+      body: Center(
+        // child: Icon(
+        //   Icons.phone_android_sharp,
+        //   size: 50,
+        //   color: Colors.white,
+        // ),
+        child: Image.network(
+            'https://img.freepik.com/free-photo/professional-soccer-player-cartoon_23-2151502421.jpg?ga=GA1.1.810212258.1715444724&semt=sph'),
+        // child: Image.asset('assets/images/Football.webp'),
       ),
     );
   }
