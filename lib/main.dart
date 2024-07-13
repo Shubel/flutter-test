@@ -69,29 +69,29 @@ class Home extends StatelessWidget {
         // ),
 
         // Text Button
-        child: TextButton(
-          onPressed: () {
-            print('Show Button Pressed');
-          },
-          child: Text(
-            'Text Button',
-            style: TextStyle(color: Colors.white),
-          ),
-        ),
-
-        // Gesture Detector with image
-        // child: GestureDetector(
-        //   onTap: (){
-        //     print('A single Tap');
+        // child: TextButton(
+        //   onPressed: () {
+        //     print('Show Button Pressed');
         //   },
-        //   onDoubleTap: (){
-        //     print('A double Tap');
-        //   },
-        //   child: Image.asset(
-        //     'assets/images/Football.webp',
-        //     fit: BoxFit.cover,
+        //   child: Text(
+        //     'Text Button',
+        //     style: TextStyle(color: Colors.white),
         //   ),
         // ),
+
+        // Gesture Detector with image
+        child: GestureDetector(
+          onTap: (){
+            print('A single Tap');
+          },
+          onDoubleTap: (){
+            print('A double Tap');
+          },
+          child: Image.asset(
+            'assets/images/Football.webp',
+            fit: BoxFit.cover,
+          ),
+        ),
 
         // // Gesture Detector with text
         // child: GestureDetector(
