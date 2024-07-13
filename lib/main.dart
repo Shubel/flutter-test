@@ -39,12 +39,17 @@ class Home extends StatelessWidget {
         // ),
         // child: Image.network(
         //     'https://img.freepik.com/free-photo/professional-soccer-player-cartoon_23-2151502421.jpg?ga=GA1.1.810212258.1715444724&semt=sph'),
-        child: Image.asset(
-          'assets/images/Football.webp',
-          width: 300,
-          height: 150,
-          fit: BoxFit.contain,
-
+        // child: Image.asset(
+        //   'assets/images/Football.webp',
+        //   width: 300,
+        //   height: 150,
+        //   fit: BoxFit.contain,
+        // ),
+        child: ElevatedButton(
+          onPressed: () {
+            print('Button Pressed');
+          },
+          child: Text('Click'),
         ),
       ),
     );
