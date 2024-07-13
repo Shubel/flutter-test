@@ -80,32 +80,32 @@ class Home extends StatelessWidget {
         // ),
 
         // Gesture Detector with image
-        child: GestureDetector(
-          onTap: (){
-            print('A single Tap');
-          },
-          onDoubleTap: (){
-            print('A double Tap');
-          },
-          child: Image.asset(
-            'assets/images/Football.webp',
-            fit: BoxFit.cover,
-          ),
-        ),
-
-        // // Gesture Detector with text
         // child: GestureDetector(
-        //   onTap: () {
+        //   onTap: (){
         //     print('A single Tap');
         //   },
-        //   onDoubleTap: () {
+        //   onDoubleTap: (){
         //     print('A double Tap');
         //   },
-        //   child: Text(
-        //     'Normal Text',
-        //     style: TextStyle(color: Colors.black),
+        //   child: Image.asset(
+        //     'assets/images/Football.webp',
+        //     fit: BoxFit.cover,
         //   ),
         // ),
+
+        // Gesture Detector with text
+        child: GestureDetector(
+          onTap: () {
+            print('A single Tap');
+          },
+          onDoubleTap: () {
+            print('A double Tap');
+          },
+          child: Text(
+            'Normal Text',
+            style: TextStyle(color: Colors.black),
+          ),
+        ),
 
         // Ink Well with text
         // child: InkWell(
