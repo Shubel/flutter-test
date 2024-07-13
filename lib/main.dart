@@ -57,27 +57,27 @@ class Home extends StatelessWidget {
         // ),
 
         // Icon Button
-        child: IconButton(
-          onPressed: () {
-            print('Adding an icon');
-          },
-          icon: Icon(
-            // Icons.add_a_photo,
-            // color: Colors.white,
-            Icons.add, color: Colors.white,
-          ),
-        ),
-
-        // Text Button
-        // child: TextButton(
+        // child: IconButton(
         //   onPressed: () {
-        //     print('Show Button Pressed');
+        //     print('Adding an icon');
         //   },
-        //   child: Text(
-        //     'Text Button',
-        //     style: TextStyle(color: Colors.white),
+        //   icon: Icon(
+        //     // Icons.add_a_photo,
+        //     // color: Colors.white,
+        //     Icons.add, color: Colors.white,
         //   ),
         // ),
+
+        // Text Button
+        child: TextButton(
+          onPressed: () {
+            print('Show Button Pressed');
+          },
+          child: Text(
+            'Text Button',
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
 
         // Gesture Detector with image
         // child: GestureDetector(
