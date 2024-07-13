@@ -94,21 +94,7 @@ class Home extends StatelessWidget {
         // ),
 
         // Gesture Detector with text
-        child: GestureDetector(
-          onTap: () {
-            print('A single Tap');
-          },
-          onDoubleTap: () {
-            print('A double Tap');
-          },
-          child: Text(
-            'Normal Text',
-            style: TextStyle(color: Colors.black),
-          ),
-        ),
-
-        // Ink Well with text
-        // child: InkWell(
+        // child: GestureDetector(
         //   onTap: () {
         //     print('A single Tap');
         //   },
@@ -120,6 +106,20 @@ class Home extends StatelessWidget {
         //     style: TextStyle(color: Colors.black),
         //   ),
         // ),
+
+        // Ink Well with text
+        child: InkWell(
+          onTap: () {
+            print('A single Tap');
+          },
+          onDoubleTap: () {
+            print('A double Tap');
+          },
+          child: Text(
+            'Normal Text',
+            style: TextStyle(color: Colors.black),
+          ),
+        ),
 
       ),
     );
